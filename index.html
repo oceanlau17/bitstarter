@@ -15,20 +15,20 @@
     <style type="text/css">
 
       /* Large desktop */
-      @media (min-width: 980px) {
-       body {
+      @media (min-width: 980px) { 
+        body {
          padding-top: 60px;
-       }
+        }
        .linediv-l {
          border-right: 1px white solid;
-       }
+        }
        .linediv-r {
          border-left: 1px white solid;
        }
       }
 
       /* Landscape phones and down */
-      @media (max-width: 480px) {
+      @media (max-width: 480px) { 
        .copy {
          padding: 2.5% 10%;
        }
@@ -40,10 +40,10 @@
        }
       }
 
-      /* Alll form factors */
-      
+      /* All form factors */
+
       /* Main body and headings */
-      body {
+      body{
         font-family: 'Open Sans', Helvetica, Arial, sans-serif;
       }
       .heading, .subheading {
@@ -62,7 +62,6 @@
 
       /* Video pitch and Action */
       .pitch {
-	color: purple;
         padding: 2.5% 0%;
       }
       .order {
@@ -72,7 +71,7 @@
         background-color: #880066;
         padding: 3% 0%;
       }
-      .vedio, .thermometer, .order, .social, .statistics {
+      .video, .thermometer, .order, .social, .statistics {
         text-align: center;
       }
       .statistics h3, .statistics p {
@@ -102,26 +101,26 @@
   </head>
   <body>
 
-    <!-- Mobile-friendly navbar adopted from example. -->
+    <!-- Mobile-friendly navbar adapted from example. -->
     <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-	  <button type="button" class="btn btn-navbar"
-		  data-toggle="collapse" data-target=".nav-collapse">
-	    <span class="icon-bar"></span>
-	    <span class="icon-bar"></span>
-	    <span class="icon-bar"></span>
-	  </button>
-	  <a class="brand" href="#">Bitstarter</a>
-	  <div class="nav-collapse collapse">
-	    <ul class="nav">
-	      <li class="active"><a href="#">Home</a></li>
-	      <li><a href="#about">About</a></li>
-	      <li><a href="#contact">Coutact</a></li>
-	    </ul>
-	  </div><!--/.nav-collapse -->
-	</div>
+          <button type="button" class="btn btn-navbar"
+                  data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">Bitstarter</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
       </div>
     </div>
 
@@ -133,26 +132,27 @@
       <!-- www.google.com/fonts/specimen/Ubuntu -->
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
       <div class="row-fluid heading">
-	<div class="span12">
-	  <h1>Kids.com : Developmemt Version</h1>
-	</div>
-      </div>
+        <div class="span12">
+          <h1>Product: Development Version</h1>
+        </div>
+      </div> 
       <div class="row-fluid subheading">
-	<div class="span12">
+        <div class="span12">
           <!-- Special typography from Bootstrap for lead paragraph. -->
           <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-	  <p class="lead">A Centralized Site for All Kids Related</p>
-	</div>
+          <p class="lead">One sentence description.</p>
+        </div>
       </div>
       <div class="row-fluid pitch">
-	<div class="span5 offset1 video">
-	  <img class="img-polaroid" src="http://placehold.it/480x300">
-	</div>
+        <div class="span5 offset1 video">
+          <img class="img-polaroid" alt="Placeholder" src="http://placehold.it/480x300">
+        </div>
 
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
         <div class="span5 actions">
+          <div class="row-fluid">
           <div class="span8 offset2">
-            <div class="statistics">
+            <div class="row-fluid statistics">
               <div class="span4">
                 <!-- linediv-l and linediv-r give dividing lines that look
                 different in horizontal and vertical layouts, illustrating
@@ -168,30 +168,37 @@
               </div>
               <div class="span4">
                 <div class="linediv-r">
-                <h3>50</h3> <p>days left</p>
+                <h3>60</h3> <p>days left</p>
                 </div>
               </div>
             </div>
           </div>
+          <div class="row-fluid">
           <div class="span10 offset1">
             <!-- Bootstrap progress bar -->
             <!-- http://twitter.github.io/bootstrap/components.html#progress -->
             <div class="thermometer progress active">
-              <div class="bar bar-success" style="width: 0%;"></div>
-              <div class="bar bar-warning" style="width: 100%;"></div>
+              <div class="bar bar-success" style="width: 60%;"></div>
+              <div class="bar bar-warning" style="width: 40%;"></div>
             </div>
           </div>
+          </div>
+          <div class="row-fluid">
           <div class="span6 offset3 order">
             <!-- Standard Bootstrap button. -->
             <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
             <button class="btn btn-success btn-large">Preorder</button>
           </div>
+          </div>
+          <div class="row-fluid">
           <div class="span8 offset2 social">
             <!-- Social buttons are not included in default Bootstrap. -->
             <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
             <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
             <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
           </div>
+          </div>
+        </div>
         </div>
       </div>
 
@@ -201,25 +208,25 @@
       <!-- http://placehold.it -->
       <div class="row-fluid section1">
         <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="https://dl.dropboxusercontent.com/u/105724600/BBShower.jpg">
+          <img class="img-polaroid"  alt="Placeholder" src="https://dl.dropboxusercontent.com/u/105724600/BBShower.jpg">
         </div>
         <div class="span5 copy">
           <p>
 	    As a full time working mom with young kids to raise, I have
-	    always felt that I am not doing enough for my kids when I get 
-	    to spend time with them; or not giving them enough educated 
-	    learning experiences that I can set them ahead of the curve
-	    early on or throughtout childhood.  I have envyed home school 
-	    moms who can devoted 100% of their time to educate and influence
-	    their children.  
-	  </p>
-	  <p>
-	    Googling online for all various thing I can do with my kids are
-	    very helpful, but also very time consuming, given the work load and
-	    the constant need to keep up with the technology field I am in.  I
-	    have wondered if there were a site that I can just go and it will
-	    give me all the answers (or links) that I need for my child's well being.
-	    Something like WebMD where everyone goes for an initial sympton check.
+            always felt that I am not doing enough for my kids when I get
+            to spend time with them; or not giving them enough educated
+            learning experiences that I can set them ahead of the curve
+            early on or throughtout childhood.  I have envyed home school
+            moms who can devoted 100% of their time to educate and influence
+            their children.
+          </p>
+          <p>
+            Googling online for all various thing I can do with my kids are
+            very helpful, but also very time consuming, given the work load and
+            the constant need to keep up with the technology field I am in.  I
+            have wondered if there were a site that I can just go and it will
+            give me all the answers (or links) that I need for my child's well being.
+            Something like WebMD where everyone goes for an initial sympton check.
           </p>
         </div>
       </div>
@@ -227,24 +234,19 @@
       <div class="row-fluid section2">
         <div class="span5 offset1 copy copy-right">
           <p>
-	    Kids.com is set out to crate a centralized contents, links 
-	    and social networking driven environment for moms & dad's alike 
-	    that want to better thier kids future.  From simply setting up age 
-	    appropriate crafty project, or early childhood stimulation, latest research
-	    article findings, to links and pointers for supplmentry online education that 
-	    goes hand in hand with their school work. Forums or (even) social networks 
-	    allowing parents to share experiences, or review sites and services that works for 
-	    them.  It allows parents to easily find age appropriate activities to do with their
-	    children's free time, while making them educational and benefitial at the same time.
-	  </p>
-	  <p>
-	    Eventually, if the sites is successful, I can envision all kids related
-	    services would want to place ads on the site for their perspective local
-	    client and tell, e.g. gymboree, mygym, etc.
+            Kids.com is set out to crate a centralized contents, links
+            and social networking driven environment for moms & dad's alike
+            that want to better thier kids future.  From simply setting up age
+            appropriate crafty project, or early childhood stimulation, latest research
+            article findings, to links and pointers for supplmentry online education that
+            goes hand in hand with their school work. Forums or (even) social networks
+            allowing parents to share experiences, or review sites and services that works for
+            them.  It allows parents to easily find age appropriate activities to do with their
+            children's free time, while making them educational and benefitial at the same time.
           </p>
         </div>
         <div class="span5 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+          <img class="img-polaroid"  alt="Placeholder" src="http://placehold.it/480x300">
         </div>
       </div>
 
@@ -285,6 +287,7 @@
           </div>
 
       </div>
+
       <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
       <!-- http://creativecommons.org/licenses/ -->
       <div class="row-fluid footer">
